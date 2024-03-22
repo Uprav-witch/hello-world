@@ -33,7 +33,7 @@ ul {
 
 .home {
   
-  background-color: grey;
+  background-color: #2F4F4F;
   
   }
 
@@ -53,13 +53,13 @@ a {
 }
 
 header {
-    background-color: #483D8B;
+    background-color: #00BFFF;
 }
 
 footer {
-    background-color: #483D8B;
+    background-color: #00BFFF;
 }
 
 aside {
-    background-color: #2F4F4F;
+    background-color: #FF1493;
 }
