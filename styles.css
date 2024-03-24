@@ -5,16 +5,15 @@ body {
 }
 h1 {
 font-size: 35px;
-border-bottom: 2px solid #000;
 }
 
 h2 {
-  color:  rgb(0, 0, 139);
+  color: rgb(255, 140, 0)
  
   }
 p {
   font-size: 16px;
-  color: rgb(0, 0, 139);
+  color: black;
   }
 
 ol {
