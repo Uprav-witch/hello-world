@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +9,15 @@
             padding-left: 15px;
         }
 
+        #left-column {
+            float: left;
+            width: calc(100% - 340px); /* Adjust width to make space for the aside elements */
+        }
+
         aside {
-            width: 300px; /* Set a fixed width for the aside elements */
-            float: right; /* Float the aside elements to the right */
-            margin-left: 20px; /* Add margin between the aside elements */
+            float: right; /* Float the aside to the right */
+            width: 300px; /* Set a fixed width for the aside */
+            margin-left: 20px; /* Add margin between the aside and the content */
             margin-bottom: 20px; /* Add margin between the stacked elements */
         }
     </style>
@@ -21,13 +25,39 @@
 </head>
 <body>
 <div id="container">
+    <div id="left-column">
+        <div id="about">
+            <h2>About</h2>
+            <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field.</p>
+        </div>
+        
+        <section>
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
+                <p>Museum Guard and Customer Service Agent at Ateneum Art Museum, Museum of Contemporary Art Kiasma and Sinebrychoff Art Museum.</p>
+            </article>
+            <article>
+                <h3>Sales representative, Finnish National Gallery, 2021-</h3>
+                <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>My education</h2>
+            <ol>
+                <li>Master of Arts, University of Helsinki, Faculty of Arts 2011–2019</li>
+                <li>Philipps-Universität Marburg, Germany, Erasmus student 2013–2014</li>
+                <li>Art School Maa, Contemporary art studies 2009–2011</li>
+                <li>Matriculation Examination, Kallio Upper Secondary School of Performing Arts 2004–2007</li>
+            </ol>
+        </section>
+    </div>
+
     <aside>
         <div class="image">
             <img src="images/Varpu.elokuu.2023.pieni.JPG" alt="Smiling person with glasses and blue background">
         </div>
-    </aside>
-
-    <aside>
         <div class="interests">
             <h2>Interests</h2>
             <ul>
@@ -36,9 +66,6 @@
                 <li>Something</li>
             </ul>
         </div>
-    </aside>
-    
-    <aside>
         <div class="skills">
             <h2>Skills</h2>
             <ul>
@@ -49,33 +76,6 @@
             <progress value="60" max="100"></progress>
         </div>
     </aside>
-    
-    <div id="about">
-        <h2>About</h2>
-        <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field.</p>
-    </div>
-    
-    <section>
-        <h2>Work Experience</h2>
-        <article>
-            <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
-            <p>Museum Guard and Customer Service Agent at Ateneum Art Museum, Museum of Contemporary Art Kiasma and Sinebrychoff Art Museum.</p>
-        </article>
-        <article>
-            <h3>Sales representative, Finnish National Gallery, 2021-</h3>
-            <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
-        </article>
-    </section>
-
-    <section>
-        <h2>My education</h2>
-        <ol>
-            <li>Master of Arts, University of Helsinki, Faculty of Arts 2011–2019</li>
-            <li>Philipps-Universität Marburg, Germany, Erasmus student 2013–2014</li>
-            <li>Art School Maa, Contemporary art studies 2009–2011</li>
-            <li>Matriculation Examination, Kallio Upper Secondary School of Performing Arts 2004–2007</li>
-        </ol>
-    </section>
 </div>
 </body>
 </html>
