@@ -1,28 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>hello-world</title>
     <style>
-        aside {
-            float: right;
-            width: 300px; /* Set a fixed width for the aside elements */
-        }
-
-        .clearfix {
-            clear: both; 
-        }
-
         #container {
             border-left: 20px solid black;
             padding-left: 15px;
         }
 
-        #about {
-            width: calc(100% - 320px); /* Adjust width to make space for the aside elements */
-        }
-
-        .image, .interests, .skills {
+        aside {
+            width: 300px; /* Set a fixed width for the aside elements */
+            float: right; /* Float the aside elements to the right */
+            margin-left: 20px; /* Add margin between the aside elements */
             margin-bottom: 20px; /* Add margin between the stacked elements */
         }
     </style>
@@ -30,14 +21,13 @@
 </head>
 <body>
 <div id="container">
-    <header>
-        <h1>Varpu</h1>
-    </header>
-    
     <aside>
         <div class="image">
             <img src="images/Varpu.elokuu.2023.pieni.JPG" alt="Smiling person with glasses and blue background">
         </div>
+    </aside>
+
+    <aside>
         <div class="interests">
             <h2>Interests</h2>
             <ul>
@@ -46,6 +36,9 @@
                 <li>Something</li>
             </ul>
         </div>
+    </aside>
+    
+    <aside>
         <div class="skills">
             <h2>Skills</h2>
             <ul>
@@ -57,13 +50,9 @@
         </div>
     </aside>
     
-    <div class="clearfix"></div> 
-    
     <div id="about">
         <h2>About</h2>
-        <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
-            I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
-            I would like study again and learn new skills in a new field. </p>
+        <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time I would like study again and learn new skills in a new field.</p>
     </div>
     
     <section>
@@ -76,9 +65,10 @@
             <h3>Sales representative, Finnish National Gallery, 2021-</h3>
             <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
         </article>
+    </section>
 
+    <section>
         <h2>My education</h2>
-
         <ol>
             <li>Master of Arts, University of Helsinki, Faculty of Arts 2011–2019</li>
             <li>Philipps-Universität Marburg, Germany, Erasmus student 2013–2014</li>
@@ -86,20 +76,6 @@
             <li>Matriculation Examination, Kallio Upper Secondary School of Performing Arts 2004–2007</li>
         </ol>
     </section>
-
-    <footer id="contact">
-        <a href="mailto:varpu.airio@kansallisgalleria.fi">Email</a>
-        <address>
-            Finnish National Gallery
-            Kaivokatu 2
-            00100 Helsinki
-        </address>
-    </footer>
-
-    <nav>
-        <a href="https://uprav-witch.github.io/hello-world/portfolio.html">Portfolio</a> 
-        <a href="#contact">Contact</a>
-    </nav>
 </div>
 </body>
 </html>
