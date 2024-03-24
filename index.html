@@ -1,138 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>hello-world</title>
-        <style>
-
-            aside {
+<head>
+    <meta charset="utf-8">
+    <title>hello-world</title>
+    <style>
+        aside {
             float: right;
+            width: 300px; /* Set a fixed width for the aside elements */
         }
 
         .clearfix {
-         clear: both; 
-       }
+            clear: both; 
+        }
 
         #container {
-        
             border-left: 20px solid black;
             padding-left: 15px;
         }
 
-            #about {
-             width: 300px;
+        #about {
+            width: calc(100% - 320px); /* Adjust width to make space for the aside elements */
         }
-        </style>
 
-        <link rel="stylesheet" href=styles.css type="text/css" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-   <div id="container">
-    
+        .image, .interests, .skills {
+            margin-bottom: 20px; /* Add margin between the stacked elements */
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="container">
     <header>
-
-    <h1>Varpu</h1>
-
+        <h1>Varpu</h1>
     </header>
-
     
-   <aside>
-       
-    <div class="image">
-
-    <img src="images/Varpu.elokuu.2023.pieni.JPG" alt="Smiling person with glasses and blue background">
-        
-    </aside>   
-       
- <div class="clearfix"></div> 
-
-       <div id="about">
-       <h2>About</h2>
-
- <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
-        I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
-        I would like study again and learn new skills in a new field. </p>
-       </div>
-           
     <aside>
-
-          <h2>Interests</h2>
-
-         <ul>
-      <li>Something</li>
-      <li>Something</li>
-      <li>Something</li>
-      
-    </ul>
-   </aside>
-        
-       
+        <div class="image">
+            <img src="images/Varpu.elokuu.2023.pieni.JPG" alt="Smiling person with glasses and blue background">
+        </div>
+        <div class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Something</li>
+                <li>Something</li>
+                <li>Something</li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Basic HTML and CSS skills</li>
+                <li>UX research</li>
+                <li>Basic Figma skills</li>
+            </ul>
+            <progress value="60" max="100"></progress>
+        </div>
+    </aside>
+    
     <div class="clearfix"></div> 
-    <aside>
-
-     <h2>Skills</h2>
-        
-    <ul>
-      <li>Basic HTML and CSS skills</li>
-      <li>UX research</li>
-      <li>Basic Figma skills</li>
-      
-    </ul>
-        
-     <progress value="60" max="100"></progress>
-        
-   </aside>
-
-    <div class="clearfix"></div> 
-       
+    
+    <div id="about">
+        <h2>About</h2>
+        <p>I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
+            I would like study again and learn new skills in a new field. I live in Helsinki and work in a museum. I graduated from university in 2019 and now after few years of working full time 
+            I would like study again and learn new skills in a new field. </p>
+    </div>
+    
     <section>
+        <h2>Work Experience</h2>
+        <article>
+            <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
+            <p>Museum Guard and Customer Service Agent at Ateneum Art Museum, Museum of Contemporary Art Kiasma and Sinebrychoff Art Museum.</p>
+        </article>
+        <article>
+            <h3>Sales representative, Finnish National Gallery, 2021-</h3>
+            <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
+        </article>
 
-    <h2>Work Experience</h2>
-    <article>
-        <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
-        <p>Museum Guard and Customer Service Agent at Ateneum Art Museum, Museum of Contemporary Art Kiasma and Sinebrychoff Art Museum.</p>
-    </article>
-    <article>
-        <h3>Sales representative, Finnish National Gallery, 2021-</h3>
-        <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
-    </article>
+        <h2>My education</h2>
 
-    <h2>My education</h2>
+        <ol>
+            <li>Master of Arts, University of Helsinki, Faculty of Arts 2011–2019</li>
+            <li>Philipps-Universität Marburg, Germany, Erasmus student 2013–2014</li>
+            <li>Art School Maa, Contemporary art studies 2009–2011</li>
+            <li>Matriculation Examination, Kallio Upper Secondary School of Performing Arts 2004–2007</li>
+        </ol>
+    </section>
 
-    <ol>
-        
-<li>Master of Arts, University of Helsinki, Faculty of Arts 2011–2019</li>
-<li>Philipps-Universität Marburg, Germany, Erasmus student 2013–2014</li>
-<li>Art School Maa, Contemporary art studies 2009–2011</li>
-<li>Matriculation Examination, Kallio Upper Secondary School of Performing Arts 2004–2007</li>
+    <footer id="contact">
+        <a href="mailto:varpu.airio@kansallisgalleria.fi">Email</a>
+        <address>
+            Finnish National Gallery
+            Kaivokatu 2
+            00100 Helsinki
+        </address>
+    </footer>
 
-      
-    </ol>
-
-
-    
-</section>
-
-<footer id="contact">
-  
-    <a href="mailto:varpu.airio@kansallisgalleria.fi">Email</a>
-
-
-    <address>
-     Finnish National Gallery
-      Kaivokatu 2
-      00100 Helsinki
-    </address>
-</footer>
-
-        <nav>
-
-    <a href="https://uprav-witch.github.io/hello-world/portfolio.html">Portfolio</a> 
-
-    <a href="#contact">Contact</a>
-
+    <nav>
+        <a href="https://uprav-witch.github.io/hello-world/portfolio.html">Portfolio</a> 
+        <a href="#contact">Contact</a>
     </nav>
-       
-    </body>
+</div>
+</body>
 </html>
