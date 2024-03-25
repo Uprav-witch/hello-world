@@ -47,6 +47,22 @@
     float: right; 
     clear: both;  
             }
+
+        .left {
+    float: left;
+    width: 20%; /* Adjust width as needed */
+}
+
+.right {
+    float: right;
+    width: 80%; /* Adjust width as needed */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
     </style>
      <link rel="stylesheet" href=styles.css type="text/css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,26 +85,39 @@
         
         <section>
             <h2>Experience</h2>
-         
-            <h3>2021-</h3>
+
+            <div class="container">
+    <div class="left">
+        
+        <h3>2021-</h3>
     
-
-           <div class="float-right">
-
-               <h3>Sales representative, Finnish National Gallery, 2021-</h3>
-                <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
+    </div>
+                
+    <div class="right">
+<h3>Sales representative, Finnish National Gallery</h3>
+        
+    <p>Working as Sales Representative at Finnish National Gallery, in charge of sales of guided tours and workshops in Ateneum, Kiasma and Sinebrychoff Art Museum.</p>
                 </div>
+        
+  
+    <div class="clearfix"></div>
 
-            <h3>2015-2021</h3>
+         <div class="left">     
 
-               <div class="float-right">
-               
-                <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
+                <h3>2015-2021</h3>
+
+
+              <div class="right">
+
+            <h3>Customer Services Agent, Finnish National Gallery, 2015-2021</h3>
                 <p>Museum Guard and Customer Service Agent at Ateneum Art Museum, Museum of Contemporary Art Kiasma and Sinebrychoff Art Museum.</p>
                       </div>
-          
-           
-              
+    
+  <div class="clearfix"></div>
+        
+
+               </div>
+       
         
         </section>
 
